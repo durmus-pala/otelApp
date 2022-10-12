@@ -1,3 +1,7 @@
+from django.db import models
+from django.contrib.auth.models import User
+
+
 class MyBaseModel(models.Model):
     createdAt = models.DateTimeField(
         auto_now_add=True, verbose_name='created at')
